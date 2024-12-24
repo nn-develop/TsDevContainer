@@ -1,4 +1,4 @@
-# TsDevContainerScript
+# TsDevContainer
 
 This repository provides a Docker-based development environment for a TypeScript React project, with integrated tools like Storybook, Playwright, and Zod. The setup automates the creation of a new React project using Vite, and configures the development container for Visual Studio Code.
 
@@ -20,13 +20,13 @@ This repository provides a Docker-based development environment for a TypeScript
 ### Steps
 
 1. Clone the repository:
-   git clone https://github.com/nn-develop/TsDevContainerScript.git
-   cd TsDevContainerScript
+   git clone https://github.com/nn-develop/TsDevContainer.git
+   cd TsDevContainer
 
 2. Edit the create_new_project.sh script:
-   Open the create_new_project.sh file in the root of the repository.
-   Modify the PROJECT_NAME variable to set the desired project name.
-   Adjust the PROJECT_NAME path if necessary to specify a custom directory.
+  Open the create_new_project.sh file in the root of the repository.
+  Modify the PROJECT_NAME variable to set the desired project name.
+  Adjust the PROJECT_NAME path if necessary to specify a custom directory.
 
 3. Build and start the development container:
     Open the project folder in Visual Studio Code.
@@ -44,6 +44,7 @@ This repository provides a Docker-based development environment for a TypeScript
 ## Docker Container Details
 
 The Docker container is based on the official node:current-bullseye image. It includes TypeScript, Storybook, and other necessary development tools.
+
 ### Exposed Ports
   Storybook: 6006
 
