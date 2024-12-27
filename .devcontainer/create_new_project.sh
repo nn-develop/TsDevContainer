@@ -5,7 +5,7 @@ set -e
 
 # Define the project name and directory
 PROJECT_NAME="simple-app"
-PROJECT_DIR="/workspaces/js_experimental/$PROJECT_NAME"
+PROJECT_DIR="/workspaces/ts_experimental/$PROJECT_NAME"
 
 # Check if package.json exists to avoid project recreation
 if [ ! -f "$PROJECT_DIR/package.json" ]; then
@@ -34,6 +34,9 @@ if [ ! -f "$PROJECT_DIR/package.json" ]; then
 
     # Initialize (and install) Storybook
     npx storybook init
+
+    # Add --host to the "dev" script in package.json
+    sed -i 's/"dev": "vite"/"dev": "vite --host"/' package.json
 
 else
     echo "Project already exists, skipping creation."

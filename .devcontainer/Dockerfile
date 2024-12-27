@@ -7,5 +7,8 @@ FROM node:current-bullseye
 # Install TypeScript globally
 RUN npm install -g typescript
 
-# Expose the port for Storybook
+# Expose port 6006 for Storybook (the default port for running Storybook)
 EXPOSE 6006
+
+# Expose port 5173 for Vite (the default port for Vite development server)
+EXPOSE 5173
