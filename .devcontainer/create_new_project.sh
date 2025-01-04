@@ -23,6 +23,9 @@ if [ ! -f "$PROJECT_DIR/package.json" ]; then
     # Change to the project directory
     cd $PROJECT_NAME
 
+    # Install newest React (19)
+    npm install react@latest react-dom@latest
+
     # Install dependencies: Zod
     npm install --save zod
 
@@ -42,7 +45,7 @@ else
     echo "Project already exists, skipping creation."
 fi
 
-# Start Storybook server with specified port and prevent auto-opening browser
+# Start Storybook server with specified port and prevent auto-opening browser AND start the dev server
 echo "Starting Storybook on port 6006 without auto-opening browser"
 cd $PROJECT_DIR
-npm run storybook -- -p 6006 --no-open
+npm run storybook -- -p 6006 --no-open & npm run dev
