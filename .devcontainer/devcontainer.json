@@ -18,6 +18,6 @@
 			]
 		}
 	},
-	"postCreateCommand": "./.devcontainer/create_new_project.sh",
+	"postStartCommand": "./.devcontainer/create_new_project.sh",
 	"remoteUser": "node"
 }
