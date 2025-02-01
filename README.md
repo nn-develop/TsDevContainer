@@ -1,3 +1,5 @@
+1.2.2025 - Added new branch "with-apps" with two training apps.
+
 # TsDevContainer
 
 This repository provides a Docker-based development environment for a TypeScript React project, with integrated tools like Storybook, Playwright, and Zod. The setup automates the creation of a new React project using Vite, and configures the development container for Visual Studio Code.
